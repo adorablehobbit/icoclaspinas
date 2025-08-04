@@ -12,7 +12,7 @@ body{
 
 .navigation-hub{
     margin: 8px 20px;
-    margin-left: 17%;
+    margin-left: 14.5%;
     margin-top: 75px;
     font-size: 13px;
 }
@@ -95,6 +95,67 @@ body{
     color: black;
 }
 
+.our-mission-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('background-images\\mission-background.jpg');
+    background-repeat: no-repeat;
+    background-position: 60% 85%;
+    background-size: cover;
+    padding: 150px 0;
+    color: white;
+}
+
+.our-mission-section h1, .our-mission-section p{
+    text-shadow: 0px 0px 20px black;
+    backdrop-filter: blur(2px);
+}
+
+.our-mission-section h1{
+    font-size: 70px;
+}
+
+.our-mission-section p{
+    margin-top: -50px;
+    margin-bottom: 70px;
+    width: 70%;
+    font-size: 25px;
+}
+
+.our-vision-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('background-images\\vision-background.jpg');
+    background-repeat: no-repeat;
+    background-position: 60% 40%;
+    background-size: cover;
+    padding: 150px 0;
+    color: white;
+}
+
+.our-vision-section h1, .our-vision-section p{
+    text-shadow: 0px 0px 20px black;
+    backdrop-filter: blur(2px);
+}
+
+.our-vision-section h1{
+    font-size: 70px;
+}
+
+.our-vision-section p{
+    margin-top: -50px;
+    margin-bottom: 70px;
+    width: 70%;
+    font-size: 25px;
+}
+
+
 .church-history{
     position: relative;
     display: flex;
@@ -102,15 +163,13 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 150px;
-    height: fit-content;
+    max-height: max-content;
     padding: 10% 0;
 }
 
 #church-history-title{
     font-size: 26px;
-    margin-bottom: -2%;
-    padding-bottom: 0.5%;
+    padding: 1% 0;
     margin-left: 10%;
     border-bottom: 1px solid rgba(128, 128, 128, 0.2);
     width: 80%;
@@ -119,19 +178,29 @@ body{
 #history-straight-line{
     border-left: 4px solid rgba(128, 128, 128, 0.2);
     position: absolute;
-    height: 92%;
+    height: 99%;
     left: 50%;
 }
 
 .history-info-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     flex-grow: 1;
     flex-shrink: 1;
+    padding: 1% 0;
+    width: 100%;
+}
+
+.history-circle-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .history-circle{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,78 +215,100 @@ body{
 }
 
 .church-boxes{
-    position: absolute;
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
     border: none;
     flex-direction: column;
     padding: 15px 30px;
-    box-shadow: 0 0 3px 0px;
-    margin-top: -1%;
+    box-shadow: 0 0 4px -1px;
+    margin-top: -50px;
+    max-width: 500px;
 }
 
 .church-boxes p{
     margin: 7px;
-    margin-right: -10px;
 }
 
-.church-box1, .church-box3, .church-box5, .church-box7, .church-box9{
-    display: flex;
+.church-box1, .church-box3, .church-box5, .church-box7, .church-box9, .church-box11{
     text-align: right;
     left: 10%;
-    right: 55%;
+    margin-right: 65%;
 }
 
-.church-box2, .church-box4, .church-box6, .church-box8, .church-box10{
-    display: flex;
-    text-align: left;
+.church-box2, .church-box4, .church-box6, .church-box8, .church-box10, .church-box12{
     right: 10%;
-    left: 55%;
+    margin-left: 65%;
+}
+
+.events-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(45, 45, 45), rgb(105, 105, 105));
+    color: white;
+    padding: 70px;
+}
+
+.events-section h1{
+    font-size: 57px;
+    margin: -15px 0px;
+}
+
+.events-section p{
+    font-size: 20px;
+}
+
+.events-section a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 540;
+    gap: 10px;
+    font-size: 15px;
+    border: none;
+    padding: 0px 10px;
+    border-radius: 7%;
+    color: white;
+    margin: 15px 0;
+    background-color: #0ba7fa;
+    cursor: pointer;
+    text-decoration: none;
+    height: 40px;
+    scale: 0.8;
+    transition: 300ms ease;
+}
+
+.events-section a:hover{
+    background-color: #0591dc;
+    transition: 300ms ease;
+}
+
+.events-section h3{
+    font-size: 20px;
+    height: fit-content;
 }
 
 
-
-@media(max-width: 900px){
-    .church-history{
-        padding-bottom: 20%;
+@media(max-width: 530px){
+    .church-box1, .church-box3, .church-box5, .church-box7, .church-box9, .church-box11{
+        left: 2%;
+        margin-right: 60%;
     }
 
-}
-
-@media(max-width: 800px){
-    .introduction-container{
-        padding: 20% 15%;
+    .church-box2, .church-box4, .church-box6, .church-box8, .church-box10, .church-box12{
+        right: 2%;
+        margin-left: 60%;
     }
 }
 
-@media(max-width: 730px){
-    .church-history{
-        margin-top: 10%;
-        padding-bottom: 40%;
+@media(max-width: 430px){
+    .church-boxes{
+        font-size: 12px;
+        padding: 5px;
     }
-}
-
-@media(max-width: 500px){
-    .introduction-container{
-        padding: 30% 7%;
-    }
-    .church-history{
-        margin-top: 20%;
-        padding-bottom: 60%;
-    }
-    .church-boxes p{
-        font-size: 14px;
-    }   
     
-}
-
-@media(max-width: 400px){
-    .introduction-container{
-        padding: 30% 7%;
-    }
-    .church-history{
-        padding-bottom: 80%;
-    }
-    .church-boxes p{
-        font-size: 13px;
-    }   
 }

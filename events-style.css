@@ -1,0 +1,64 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+#icoc-ph-logo-sample{
+    margin-top: -9px;
+}
+
+.navigation-hub{
+    margin: 8px 20px;
+    margin-left: 14.5%;
+    margin-top: 75px;
+    font-size: 13px;
+}
+
+#nav-hub-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: fit-content;
+    max-height: fit-content;
+    color: grey;
+    gap: 10px;
+}
+
+.navigation-hub a{
+    text-decoration: none;
+    color: rgb(8, 129, 170);
+}
+
+#upcoming-event-container{
+    font-size: 40px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    padding-bottom: 15px;
+}
+
+.events-container{
+    margin-bottom: 30px;
+}
+
+.events-content{
+    position: relative;
+    margin: 3% 12.5%;
+}
+
+.events-content h3{
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.event1 .img-container{
+    background-color: rgb(3, 5, 5);
+}
+
+.event1 img{
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.event2 img{
+    width: 100%;
+}

@@ -442,6 +442,7 @@ img.display-slide{
     background-color: #0ba7fa;
     cursor: pointer;
     text-decoration: none;
+    transition: 300ms ease;
 }
 
 .profile-container a > h3{
@@ -450,6 +451,7 @@ img.display-slide{
 
 .profile-container a:hover{
     background-color: #0591dc;
+    transition: 300ms ease;
 }
 
 

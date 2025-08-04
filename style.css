@@ -23,7 +23,6 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 10px;
     padding-top: 13px;
     height: 55px;
     background-color: white;
@@ -201,10 +200,12 @@ footer p{
     border-radius: 100%;
     padding: 14px 14px;
     cursor: pointer;
+    transition: 300ms ease;
 }
 
 #icons i:hover{
     background-color: #406cbf;
+    transition: 300ms ease;
 }
 
 #icons a:visited{
