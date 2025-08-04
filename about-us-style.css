@@ -1,0 +1,223 @@
+/* *{
+    outline: 2px solid red;
+} */
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+#icoc-ph-logo-sample{
+    margin-top: -9px;
+}
+
+.navigation-hub{
+    margin: 8px 20px;
+    margin-left: 17%;
+    margin-top: 75px;
+    font-size: 13px;
+}
+
+#nav-hub-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: fit-content;
+    max-height: fit-content;
+    color: grey;
+    gap: 10px
+}
+
+.navigation-hub a{
+    text-decoration: none;
+    color: rgb(8, 129, 170);
+}
+
+.about-us-section{
+    background: url("icoc-images\\ymd-group-picture.jpg");
+    background-position: 60% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px 0;
+    object-fit: cover;
+}
+
+.greeting-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.greeting-section h2, .greeting-section p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 0px 0px 20px black;
+    backdrop-filter: blur(2px);
+}
+
+.greeting-section h2{
+    font-size: 70px;
+}
+
+.greeting-section p{
+    font-weight: 300;
+    max-width: 70%;
+    margin-top: -60px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.introduction-container{
+    padding: 12% 15%;
+    font-weight: 400;
+    color: rgb(82, 82, 82);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 19px;
+}
+
+#introduction-title-1{
+    font-family: "Roboto", sans-serif;
+    margin: -15px;
+    font-size: 26px;
+    font-weight: 200;
+    color: grey;
+}
+
+.introduction-container h1{
+    font-family: "Roboto", sans-serif;
+    margin: 20px;
+    font-size: 45.1px;
+    color: black;
+}
+
+.church-history{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 150px;
+    height: fit-content;
+    padding: 10% 0;
+}
+
+#church-history-title{
+    font-size: 26px;
+    margin-bottom: -2%;
+    padding-bottom: 0.5%;
+    margin-left: 10%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    width: 80%;
+}
+
+#history-straight-line{
+    border-left: 4px solid rgba(128, 128, 128, 0.2);
+    position: absolute;
+    height: 92%;
+    left: 50%;
+}
+
+.history-info-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.history-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(6, 70, 143);
+    color: white;
+    z-index: 5;
+}
+
+.church-boxes{
+    position: absolute;
+    display: flex;
+    border: none;
+    flex-direction: column;
+    padding: 15px 30px;
+    box-shadow: 0 0 3px 0px;
+    margin-top: -1%;
+}
+
+.church-boxes p{
+    margin: 7px;
+    margin-right: -10px;
+}
+
+.church-box1, .church-box3, .church-box5, .church-box7, .church-box9{
+    display: flex;
+    text-align: right;
+    left: 10%;
+    right: 55%;
+}
+
+.church-box2, .church-box4, .church-box6, .church-box8, .church-box10{
+    display: flex;
+    text-align: left;
+    right: 10%;
+    left: 55%;
+}
+
+
+
+@media(max-width: 900px){
+    .church-history{
+        padding-bottom: 20%;
+    }
+
+}
+
+@media(max-width: 800px){
+    .introduction-container{
+        padding: 20% 15%;
+    }
+}
+
+@media(max-width: 730px){
+    .church-history{
+        margin-top: 10%;
+        padding-bottom: 40%;
+    }
+}
+
+@media(max-width: 500px){
+    .introduction-container{
+        padding: 30% 7%;
+    }
+    .church-history{
+        margin-top: 20%;
+        padding-bottom: 60%;
+    }
+    .church-boxes p{
+        font-size: 14px;
+    }   
+    
+}
+
+@media(max-width: 400px){
+    .introduction-container{
+        padding: 30% 7%;
+    }
+    .church-history{
+        padding-bottom: 80%;
+    }
+    .church-boxes p{
+        font-size: 13px;
+    }   
+}

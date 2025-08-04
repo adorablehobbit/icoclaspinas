@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | ICOC Las Piñas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home-style.css">
+    <link rel="icon" type="image/x-icon" href="logo-images\icoc-ph-logo-sample.png">
+    <script src="https://kit.fontawesome.com/2bd7bb3d9c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/" id="logo-container">
+                <img src="logo-images\icoc-ph-logo-sample.png" id="icoc-ph-logo-sample"></img>
+            </a>
+            
+            <div class="navigation-bar">
+                <a href="/about-us.html" id="aboutUsPage">About Us</a>
+                <a href="" id="resourcesPage">Resources</a>
+                <a href="" id="eventsPage">Events</a>
+                <a href="" id="blogPage">Blog</a>
+                <a href="" id="contactUsPage">Contact Us</a>
+            </div>
+
+            <div class="drop-down-menu">
+                <i class="fa-solid fa-bars" id="menu-bar"></i>
+            </div>
+            <div class="drop-down-items drop-down-items-hide">
+                <a href="/about-us.html" id="aboutUsPage">About Us</a>
+                <a href="" id="resourcesPage">Resources</a>
+                <a href="" id="eventsPage">Events</a>
+                <a href="" id="blogPage">Blog</a>
+                <a href="" id="contactUsPage">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="img-slider">
+        <div class="img-slides">
+            <div class="img-slides-crop">
+                <img src="https://icoc.ph/application/files/6217/3563/0027/1920x1080.jpg">
+                <img src="https://icoc.ph/application/files/6715/5383/7433/ICOCPhilippines.jpg">
+                <img src="https://icoc.ph/application/files/1117/5221/8502/Reach36-Compressed.jpg">
+                <img src="https://icoc.ph/application/files/5817/5194/9826/BA758E02-344B-411F-8B2D-F2D817604832.png">
+                <img src="https://icoc.ph/application/files/7917/4006/2158/1.jpg">
+            </div>
+            <button id="prevButton" onclick="goButton('prev')">&#10094</button>
+            <button id="nextButton" onclick="goButton('next')">&#10095</button>
+        </div>
+    </div>
+   
+    <div id="blog-document">
+        <h1>From the Blog</h1>
+        <div id="blog-articles">
+            <div id="article-1">
+                <img src="https://icoc.ph/application/files/1117/5221/8502/Reach36-Compressed.jpg">
+                <h1>ICOC Philippines 36 years str…</h1>
+                <p>1 week ago</p>
+                <p>ICOC Philippines celebrates 36 years of building faith, family, and community since its first worship service in 1988. What began as a small group …</p>
+            </div>
+            <div id="article-2">
+                <img src="https://icoc.ph/application/files/8017/4683/8031/KV_Primary_KV_Design_1_1.jpg">
+                <h1>Countdown begins for Reach Bey…</h1>
+                <p>1 month ago - Marianne Abalayan</p>
+                <p>Delegates from across ICOC Philippines gear up for a weekend of worship, learning, and connection in Batangas. Nearly 500 delegates from Luzon, Vis…</p>
+            </div>
+            <div id="article-3">
+                <img src="https://icoc.ph/application/files/7917/4006/2158/1.jpg">
+                <h1>LifeTalk: ICOC SPARK Life Less…</h1>
+                <p>5 months ago</p>
+                <p>Balancing career, relationships, and well-being can be overwhelming. LifeTalk, an ICOC SPARK life lesson series, empowers singles with faith-driven in…</p>
+            </div>
+        </div>
+        <a href="https://icoc.ph/blog" id="read-more">&#10095 Read more blogs</a>
+    </div>
+    <div id="video-section">
+        <div id="video-1">
+            <h1>Upcoming Events</h1>
+            <div id="image-video-1-slides">
+                <img src="https://icoc.ph/application/files/6217/3563/0027/1920x1080.jpg">
+                <img src="https://icoc.ph/application/files/6715/5383/7433/ICOCPhilippines.jpg">
+                <img src="https://icoc.ph/application/files/1117/5221/8502/Reach36-Compressed.jpg">
+                <img src="https://icoc.ph/application/files/5817/5194/9826/BA758E02-344B-411F-8B2D-F2D817604832.png">
+                <button id="video-1-prev" onclick="goButtonVideo('prev')">&#10094</button>
+                <button id="video-1-next" onclick="goButtonVideo('next')">&#10095</button>
+            </div>
+        </div>
+        <div id="video-2">
+            <h1>Online Worship Service</h1>
+             <iframe src="https://www.facebook.com/plugins/video.php?height=340&href=https%3A%2F%2Fwww.facebook.com%2Ficoclpofficial%2Fvideos%2F1090938592531854%2F&show_text=false&width=527&t=0" width="527" height="340" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </div>
+    </div>
+
+    <div id="profile-section">
+        <span class="profile-container">
+            <h1>Who we are</h1>
+            <h2>Get to know more about our Church</h2>
+            <a href="/about-us.html"><h3>&#10095</h3> Our story</a>
+        </span>
+    </div>
+
+    <footer>
+        <div id="icons">
+            <a href="https://www.facebook.com/icoclpofficial" target="_blank">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="https://x.com/icoc_ph" target="_blank">
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/@ICOCPhilippines" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/icocphofficial/" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+        </div>
+        <h1>ICOC LAS PIÑAS</h1>
+        <p>House Church | 📍Manila Doctors Access Road, Almanza, Las Pinas City, Philippines |  📞 0998 547 1945</p>
+        <p>Copyright © 2025. All rights reserved.</p>
+        <a id="privacy-policy">Privacy Policy</a>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="home-script.js"></script>
+</html>
