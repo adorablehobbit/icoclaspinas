@@ -14,5 +14,3 @@ searchBar.addEventListener("input", (searchValue) => {
         }
     }
 });
-
-console.log(specificArticles[0].children[1].children[1].textContent.toLowerCase());
