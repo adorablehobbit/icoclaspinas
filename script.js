@@ -28,7 +28,6 @@ const dropDownMenu = document.getElementById("menu-bar")
 dropDownMenu.addEventListener("click", event => {
     dropDownItems.classList.toggle("drop-down-items-hide");
     dropDownItems.classList.toggle("drop-down-items-display");
-    console.log(dropDownItems);
 });
 
 

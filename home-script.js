@@ -8,18 +8,17 @@ Array.from(imgSlides.children).forEach((element, index, array) => {
     array[index].style.order = index + 1;
 });
 
-// setInterval(() => {
-//     Array.from(imgSlides.children).forEach((element, index, array) => {
-//         array[index].classList.add("animation-right");
-//         console.log(array[index]);
-//         setTimeout(() => {
-//             array[index].style.order = Number(element.style.order) + 1;
-//             if(array[index].style.order > imgSlides.children.length){
-//                 array[index].style.order = 1;
-//             };
-//         }, 700); 
-//     }); 
-// }, 12000);
+setInterval(() => {
+    Array.from(imgSlides.children).forEach((element, index, array) => {
+        array[index].classList.add("animation-right");
+        setTimeout(() => {
+            array[index].style.order = Number(element.style.order) + 1;
+            if(array[index].style.order > imgSlides.children.length){
+                array[index].style.order = 1;
+            };
+        }, 700); 
+    }); 
+}, 7000);
 
 function goButton(theButton){
     switch(theButton){
