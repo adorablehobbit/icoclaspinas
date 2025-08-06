@@ -71,6 +71,10 @@ input[type="text"]:focus, textarea:focus{
     width: 100%;
 }
 
+#contact-us-form-id p{
+    font-weight: 700;
+}
+
 #submit-button{
     width: fit-content;
     height: fit-content;
