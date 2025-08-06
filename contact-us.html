@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events | ICOC Las Piñas</title>
+    <title>Contact Us | ICOC Las Piñas</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="events-style.css">
+    <link rel="stylesheet" href="contact-us-style.css">
     <link rel="icon" type="image/x-icon" href="logo-images\icoc-ph-logo-sample.png">
     <script src="https://kit.fontawesome.com/2bd7bb3d9c.js" crossorigin="anonymous"></script>
 </head>
@@ -41,28 +41,25 @@
         <span id="nav-hub-container">
             <a href="./">Home</a>
             <p>/</p>
-            <p>Events</p>
+            <p>Contact Us</p>
         </span>
     </div>
 
-    <div class="events-content">
-        <h1 id="upcoming-event-container">Upcoming Events</h1>
-        <div class="events-container event1">
-            <h3>August Jamboree</h3>
-            <div class="img-container">
-                <a href="https://www.facebook.com/share/p/1JNg4M1fv5/">
-                    <img src="events-database\current-events\event-jamboree.jpg" alt="August Jamboree">
-                </a>
-            </div>
-        </div>
-        <div class="events-container event2">
-            <h3>Children's Ministry Moving Up Ceremony</h3>
-            <div class="img-container">
-                <a href="https://www.facebook.com/share/p/19ZMbwdbGh/">
-                    <img src="events-database\current-events\moving-up-ceremony.jpg" alt="CM Moving Up">
-                </a>
-            </div>
-        </div>
+    <div class="icoc-lp-location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14529.678348304513!2d120.9939089871582!3d14.435922900000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d1de7b3c414d%3A0xbea74bf194470c6!2sICOC%20Las%20Pi%C3%B1as!5e1!3m2!1sen!2sph!4v1754454695535!5m2!1sen!2sph" title="icoc-lp-house-of-worship" width="100%" height="300" style="border:1px solid grey;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="contact-information">
+        <h1>Say hello!</h1>
+        <form>
+            <label for="user-name">Name</label>
+            <input type="text" id="user-name">
+            <label for="email-address">Email address</label>
+            <input type="text" id="email-address">
+            <label for="user-message">What can we pray for you?</label>
+            <textarea type="text" id="user-message" rows="5" cols="40" wrap="soft"></textarea>
+            <input type="submit" id="submit-button">
+        </form>
     </div>
 
 
@@ -89,4 +86,3 @@
 </body>
 <script src="script.js"></script>
 </html>
-
