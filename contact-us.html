@@ -51,14 +51,15 @@
 
     <div class="contact-information">
         <h1>Say hello!</h1>
-        <form>
+        <form id="contact-us-form-id">
             <label for="user-name">Name</label>
-            <input type="text" id="user-name">
+            <input type="text" id="user-name" name="entry.1256008817" required>
             <label for="email-address">Email address</label>
-            <input type="text" id="email-address">
+            <input type="text" id="email-address" name="entry.1874557457" required>
             <label for="user-message">What can we pray for you?</label>
-            <textarea type="text" id="user-message" rows="5" cols="40" wrap="soft"></textarea>
+            <textarea type="text" id="user-message" rows="5" cols="40" wrap="soft" name="entry.355664362" required></textarea>
             <input type="submit" id="submit-button">
+            <p id="statusMessage" style="display: none;">Thank you. Your message has been sent. We appreciate you reaching out! 😁</p>
         </form>
     </div>
 
@@ -85,4 +86,5 @@
     </footer>
 </body>
 <script src="script.js"></script>
+<script src="contact-us-script.js"></script>
 </html>
