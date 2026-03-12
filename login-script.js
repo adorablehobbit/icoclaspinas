@@ -38,7 +38,8 @@ formId.addEventListener("submit", (event) => {
             summary.innerHTML = result;
             summary.style.display = "block";
         }else{
-            summary.innerHTML = "No user found."
+            summary.innerHTML = "No user found or wrong credentials."
+            summary.style.display = "block";
         }
         
       });
