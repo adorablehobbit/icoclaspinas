@@ -10,9 +10,9 @@ Array.from(imgSlides.children).forEach((element, index, array) => {
 
 setInterval(() => {
     Array.from(imgSlides.children).forEach((element, index, array) => {
-        array[index].classList.add("animation-right");
+        array[index].classList.add("animation-left");
         setTimeout(() => {
-            array[index].style.order = Number(element.style.order) + 1;
+            array[index].style.order = Number(element.style.order) - 1;
             if(array[index].style.order > imgSlides.children.length){
                 array[index].style.order = 1;
             };
@@ -22,7 +22,7 @@ setInterval(() => {
 
 function goButton(theButton){
     switch(theButton){
-        case "next":
+        case "prev":
             Array.from(imgSlides.children).forEach((element, index, array) => {
                 array[index].classList.add("animation-right");
                 setTimeout(() => {
@@ -33,7 +33,7 @@ function goButton(theButton){
                 }, 700); 
             });
             break;
-        case "prev":
+        case "next":
             Array.from(imgSlides.children).forEach((element, index, array) => {
                 array[index].classList.add("animation-left");
                 setTimeout(() => {

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | ICOC Las Piñas</title>
+    <title>Home | ICOC Las Piñas</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact-us-style.css">
+    <link rel="stylesheet" href="login-style.css">
     <link rel="icon" type="image/x-icon" href="logo-images\icoc-ph-logo-sample.png">
     <script src="https://kit.fontawesome.com/2bd7bb3d9c.js" crossorigin="anonymous"></script>
 </head>
@@ -39,32 +39,22 @@
         </div>
     </header>
 
-    <div class="navigation-hub">
-        <span id="nav-hub-container">
-            <a href="./">Home</a>
-            <p>/</p>
-            <p>Contact Us</p>
-        </span>
-    </div>
+    <div class="authentication-container">
+        <div class="authentication">
+            <h1>Login</h1>
+            <form id="login-form">
+                <label for="email-address">Email address</label>
+                <input type="text" id="email-address" required>
 
-    <div class="icoc-lp-location">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14529.678348304513!2d120.9939089871582!3d14.435922900000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d1de7b3c414d%3A0xbea74bf194470c6!2sICOC%20Las%20Pi%C3%B1as!5e1!3m2!1sen!2sph!4v1754454695535!5m2!1sen!2sph" title="icoc-lp-house-of-worship" width="100%" height="300" style="border:1px solid grey;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <label for="password">Password</label>
+                <input type="text" id="password" required>
+                <input type="submit" id="submit-button" value="LOGIN">
+            </form>
+            <div class="content-summary" style="margin-top: 20px; margin-bottom: -40px;">
+            </div>
+        </div>
     </div>
-
-    <div class="contact-information">
-        <h1>Say hello!</h1>
-        <form id="contact-us-form-id">
-            <label for="user-name">Name</label>
-            <input type="text" id="user-name" name="entry.1256008817" required>
-            <label for="email-address">Email address</label>
-            <input type="text" id="email-address" name="entry.1874557457" required>
-            <label for="user-message">What can we pray for you?</label>
-            <textarea type="text" id="user-message" rows="5" cols="40" wrap="soft" name="entry.355664362" required></textarea>
-            <input type="submit" id="submit-button">
-            <p id="statusMessage" style="display: none;">Thank you. Your message has been sent. We appreciate you reaching out! 😁</p>
-        </form>
-    </div>
-
+    
 
     <footer>
         <div id="icons">
@@ -88,5 +78,5 @@
     </footer>
 </body>
 <script src="script.js"></script>
-<script src="contact-us-script.js"></script>
+<script src="login-script.js"></script>
 </html>
