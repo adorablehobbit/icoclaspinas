@@ -36,6 +36,7 @@ formId.addEventListener("submit", (event) => {
             <b>Special Missions Contribution:</b> P${SMC}
             `;
             summary.innerHTML = result;
+            summary.style.display = "block";
         }else{
             summary.innerHTML = "No user found."
         }

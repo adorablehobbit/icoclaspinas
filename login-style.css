@@ -5,16 +5,90 @@
     justify-content: center;
 }
 
-.authentication{
-    margin: 100px;
-    padding: 100px;
+/* .authentication{
+    margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
 #login-form{
     display: flex;
     flex-direction: column;
+}
+
+.authentication{
+    margin-bottom: 100px;
+}
+
+.authentication form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 2% 25%;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+}
+
+.authentication h1{
+    margin: 2% 25%;
+    margin-top: 100px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 5px;
+}
+
+.authentication label{
+    font-size: 17px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: -5px;
+}
+
+.authentication input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+input[type="text"]:focus, textarea:focus{
+    outline: none;
+    border: 1px solid rgb(8, 129, 170);
+    box-shadow: 0 0 3px 1px rgb(8, 129, 170); 
+}
+
+#login-form p{
+    font-weight: 700;
+}
+
+#submit-button{
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    padding: 5px 15px;
+    color: white;
+    font-size: 17px;
+    background-color: #0ba7fa;
+    transition: 300ms ease;
+}
+
+#submit-button:hover{
+    background-color: #0591dc;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+
+#submit-button:active{
+    background-color: #5db9eb;
+}
+
+.content-summary{
+    margin: 2.5% 25%;
+    border-bottom: 1px solid grey;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
 }
